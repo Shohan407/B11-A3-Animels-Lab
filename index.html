@@ -22,16 +22,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-animels-primary': '#FFDC26',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-animels-primary': '#FFDC26',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
         .adlam-display-regular {
             font-family: "ADLaM Display", serif;
@@ -48,8 +48,55 @@
     </style>
 </head>
 
-<body class="adlam-display-regular max-w-screen-2xl px-16 mx-auto lg:px-28">
-   
+<body class="adlam-display-regular">
+    <header class="bg-[#FFF9F4]">
+        <!-- Navbar Section -->
+        <nav class="border-b-2 border-black lg:border-none  w-full overflow-hidden max-w-screen-2xl mx-auto px-8">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <img src="c1-assets/logo-header.png" alt="Logo" class="  lg:block ">
+                    <p class="w-20 h-auto text-2xl hidden lg:block">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex gap-3">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn btn-outline btn-sm hover:bg-[#FFDC26] border-[#FFDC26] rounded-lg">Login</a>
+                    <a class="btn btn-outline btn-sm hover:bg-yellow-600 border-[#FFDC26] rounded-lg bg-[#FFDC26]">Register</a>
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="Black">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"></path>
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
