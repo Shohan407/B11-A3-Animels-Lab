@@ -51,8 +51,8 @@
 <body class="adlam-display-regular">
     <header class="bg-[#FFF9F4]">
         <!-- Navbar Section -->
-        <nav class="w-full px-8 mx-auto overflow-hidden border-b-2 border-black lg:border-none max-w-screen-2xl">
-            <div class="navbar ">
+        <nav class="w-full px-8 mx-auto border-b-2 border-black lg:border-none max-w-screen-2xl">
+            <div class="navbar">
                 <div class="gap-3 navbar-start">
                     <img src="c1-assets/logo-header.png" alt="Logo" class=" lg:block">
                     <p class="hidden w-20 h-auto text-2xl lg:block">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
@@ -72,16 +72,16 @@
                         class="btn btn-outline btn-sm hover:bg-yellow-600 border-[#FFDC26] rounded-lg bg-[#FFDC26]">Register</a>
                 </div>
                 <div class="navbar-end lg:hidden">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                                stroke="Black">
+                                stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"></path>
+                                    d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 -ml-32 w-44 rounded-box z-[1] mt-3 shadow">
                             <li><a>Find a pet</a></li>
                             <li><a>Breeds</a></li>
                             <li><a>Contact us</a></li>
@@ -97,7 +97,7 @@
         <div class="px-12 mx-auto max-w-screen-2xl">
             <div class="py-24 lg:flex">
                 <div>
-                    <h1 class="mb-4 text-6xl">Pamper Your Pet, <br> Because They Deserve the Best</h1>
+                    <h1 class="mb-4 text-6xl animate-bounce">Pamper Your Pet, <br> Because They Deserve the Best</h1>
                     <p class="mb-6 text-gray-600 sora-font">Discover a world of treats, toys, and essentials handpicked
                         for your furry friends. Shop now and make tails wag with joy!</p>
                     <button class="btn  bg-[#FFDC26] mb-8">Find a pet</button>
@@ -309,84 +309,87 @@
                 </div>
             </section>
         </section>
-            <!-- Everyday low price Section -->
-            <section class="container p-3 mx-auto mt-10 mb-10">
-                <div class="p-3 lg:p-20">
-                  <h2 class="mb-10 text-3xl mt-14">Everyday low Price</h2>
+        <!-- Everyday low price Section -->
+        <section class="container p-3 mx-auto mt-10 mb-10">
+            <div class="p-3 lg:p-20">
+                <h2 class="mb-10 text-3xl mt-14">Everyday low Price</h2>
                 <div class="gap-5 lg:flex">
-                  <!-- 1st Price -->
-                  <div class="flex p-5 lg:items-center lg:p-20 mb-5 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:h-96 rounded-3xl lg:w-3/5">
-                    <div class="w-2/3">
-                      
-                       <p class="hidden lg:block">Under Price</p>
-                      <h3 class=" lg:text-3xl">Pet Grooming Mitt</h3>
-                      <p class="hidden mb-4 text-white lg:block">(Easy Hair Removal)</p>
-                      <p class="text-6xl text-white lg:text-black">$7.99</p>
+                    <!-- 1st Price -->
+                    <div
+                        class="flex p-5 lg:items-center lg:p-20 mb-5 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:h-96 rounded-3xl lg:w-3/5">
+                        <div class="w-2/3">
+
+                            <p class="hidden lg:block">Under Price</p>
+                            <h3 class=" lg:text-3xl">Pet Grooming Mitt</h3>
+                            <p class="hidden mb-4 text-white lg:block">(Easy Hair Removal)</p>
+                            <p class="text-6xl text-white lg:text-black">$7.99</p>
+                        </div>
+                        <div class="overflow-hidden">
+                            <img class="pt-3 w-96" src="c1-assets/cute-dog-mid.png" alt="">
+                        </div>
                     </div>
-                    <div class="overflow-hidden">
-                      <img class="pt-3 w-96" src="c1-assets/cute-dog-mid.png" alt="">
+                    <!-- 2nd Price -->
+                    <div
+                        class=" bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] lg:h-96  rounded-3xl flex  lg:p-10 p-7 pt-2">
+                        <div class="w-2/3">
+                            <h3 class="mt-5 lg:text-3xl">T-Shirt for Dogs</h3>
+                            <p class=" text-6xl   text-[#FFDC26]">$7.99</p>
+                        </div>
+                        <div class="overflow-hidden">
+                            <img src="c1-assets/cute-pet-mid.png" alt="">
+                        </div>
                     </div>
-                  </div>
-                <!-- 2nd Price -->
-                <div class=" bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] lg:h-96  rounded-3xl flex  lg:p-10 p-7 pt-2">
-                  <div class="w-2/3">
-                    <h3 class="mt-5 lg:text-3xl">T-Shirt for Dogs</h3>
-                    <p class=" text-6xl   text-[#FFDC26]">$7.99</p>
-                  </div>
-                  <div class="overflow-hidden">
-                    <img src="c1-assets/cute-pet-mid.png" alt="">
-                  </div>
                 </div>
-                </div>
-                </div>
-              </section>
-      
-           
+            </div>
+        </section>
+
+
     </main>
-       <!-- News section -->
-       <section class="container relative mx-auto -mb-72">
+    <!-- News section -->
+    <section class="container relative mx-auto -mb-72">
         <div class="p-3 lg:p-20">
-          <div class="grid grid-cols-1 lg:grid-cols-2 bg-[#FFF9F4]  p-9 lg:p-16 rounded-3xl">
-            <div>
-              <img src="c1-assets/cute-pet-mid.png" alt="">
+            <div class="grid grid-cols-1 lg:grid-cols-2 bg-[#FFF9F4]  p-9 lg:p-16 rounded-3xl">
+                <div>
+                    <img src="c1-assets/cute-pet-mid.png" alt="">
+                </div>
+                <div class="w-full text-center lg:text-start">
+                    <h2 class="text-[36px] font-semibold mb-6">Get Grocery News!</h2>
+                    <p class="text-[20px] mb-6">Exclusive training tips, ticks, product deals and more.</p>
+                    <label class="flex items-center w-3/4 ml-10 input lg:ml-0">
+                        <input type="text" class="text-[#C4C4C4] text-[16px] " placeholder="Enter email...." />
+                    </label>
+                    <a class=" btn px-8 bg-[#FFDC26]  rounded-lg mt-8">Subscriber</a>
+                </div>
             </div>
-            <div class="w-full text-center lg:text-start">
-              <h2 class="text-[36px] font-semibold mb-6">Get Grocery News!</h2>
-              <p class="text-[20px] mb-6">Exclusive training tips, ticks, product deals and more.</p>
-              <label class="flex items-center w-3/4 ml-10 input lg:ml-0">  
-                <input type="text" class="text-[#C4C4C4] text-[16px] " placeholder="Enter email...." />
-              </label>
-              <a class=" btn px-8 bg-[#FFDC26]  rounded-lg mt-8">Subscriber</a>
-            </div>
-          </div>
         </div>
-       </section>  
-     <!-- Footer section -->
-  <footer class="footer bg-[#ffdb267a] pt-96 lg:pt-72 lg:p-20 p-2">
-     
+    </section>
+    <!-- Footer section -->
+    <footer class="footer bg-[#ffdb267a] pt-96 lg:pt-72 lg:p-20 p-2">
+
         <nav class="lg:ml-44">
             <div class="flex gap-2 text-center">
-               <img src="c1-assets/logo-footer.png" alt="Logo">
-                           <p class="w-20 h-auto mt-2 text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
+                <img src="c1-assets/logo-footer.png" alt="Logo">
+                <p class="w-20 h-auto mt-2 text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
             </div>
-             <p class="sora-font">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
-           </nav>
-           <nav class="gap-6 sora-font">
-             <a class="link link-hover">Find a pet</a>
-             <a class="link link-hover">Breeds</a>
-             <a class="link link-hover">Contact us</a>
-           </nav>
-           <nav class="lg:mt-14">
-             <h2>Follow Us</h2>
-             <div class="grid grid-flow-col gap-4">
-               <i class="fa-brands fa-facebook"></i>
-               <i class="fa-brands fa-instagram"></i>
-               <i class="fa-brands fa-linkedin"></i>
-               <i class="fa-brands fa-youtube"></i>
-             </div>
-           </nav>
-   
-</footer>
+            <p class="sora-font">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>
+                friends</p>
+        </nav>
+        <nav class="gap-6 sora-font">
+            <a class="link link-hover">Find a pet</a>
+            <a class="link link-hover">Breeds</a>
+            <a class="link link-hover">Contact us</a>
+        </nav>
+        <nav class="lg:mt-14">
+            <h2>Follow Us</h2>
+            <div class="grid grid-flow-col gap-4">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </nav>
+
+    </footer>
 </body>
 
 </html>
